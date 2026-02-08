@@ -4,14 +4,17 @@
 int main(){
     //define o encoding
     setlocale(LC_ALL, "pt_BR.UTF-8");
+
     //primeira carta
     char estado, codigoCarta[40], nomeCidade[40];
     int populacao, numeroPontosTuristicos;
     float areaKmQuadrado, pib;
+
     //segunda carta
     char estado2, codigoCarta2[40], nomeCidade2[40];
     int populacao2, numeroPontosTuristicos2;
     float areaKmQuadrado2, pib2;
+
     //saudações
     printf("Olá, seja bem vindo ao jogo super trunfo!\n");
     printf("Cadastre suas duas cartas para jogar!\n");
@@ -51,6 +54,7 @@ int main(){
     scanf("%f", &pib2);
     printf("A quantidade de pontos turísticos da cidade: ");
     scanf("%d", &numeroPontosTuristicos2);
+
     //print dos dados das cartas
     printf("Tudo pronto! essas são suas cartas:\n");
     printf("Carta 1:\nEstado: %c \nCódigo: %s \nNome da Cidade: %s \nPopulação: %d \nÁrea: %f km² \nPIB: %f bilhões de reais \nNúmero de Pontos Turísticos: %d\n", estado, codigoCarta, nomeCidade, populacao,areaKmQuadrado, pib, numeroPontosTuristicos);
